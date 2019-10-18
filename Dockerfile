@@ -2,4 +2,6 @@ FROM node:12.12.0
 
 COPY . .
 
-CMD ["node", "index.js"]
+RUN node index.js &
+
+CMD ["top"]
